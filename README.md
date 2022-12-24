@@ -8,8 +8,8 @@ Sentiment Analysis for tweets
 <p> After creating virtual environment, install python version>=3.8</p>
 
 '''
-conda create -n sentiment
 
+conda create -n sentiment
 '''
 
 ### Install requirements
@@ -17,6 +17,7 @@ conda create -n sentiment
 <p> Install all the required dependencies from requirements.txt file</p>
 
 '''
+
 pip install -r requirements.txt
 '''
 
@@ -28,12 +29,14 @@ pip install -r requirements.txt
 </ul>
 
 '''
+
 python training.py
 '''
 
 ### Start FastAPI server
 
 '''
+
 uvicorn app:app --reload
 '''
 
