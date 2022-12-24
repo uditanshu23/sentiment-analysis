@@ -16,7 +16,8 @@ def main():
     processor = Processor()
     train_df, test_df = processor.data_processor(path)
     inference = Inference()
-    inference.inference(test_df)
+    inference.inference(train_df, test_df)
+    return inference
 
 if __name__ == '__main__':
     main()
