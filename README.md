@@ -8,7 +8,6 @@ Sentiment Analysis for tweets
 <p> After creating virtual environment, install python version>=3.8</p>
 
 ```
-
 conda create -n sentiment
 ```
 
@@ -17,7 +16,6 @@ conda create -n sentiment
 <p> Install all the required dependencies from requirements.txt file</p>
 
 ```
-
 pip install -r requirements.txt
 ```
 
@@ -29,16 +27,21 @@ pip install -r requirements.txt
 </ul>
 
 ```
-
 python training.py
 ```
 
 ### Start FastAPI server
 
 ```
-
 uvicorn app:app --reload
 ```
 
 <p> Hit the url with the text whose sentiment needs to be identified, the api returns a dictonary with the text and its predicted sentiment</p>
 
+
+## Future Work
+
+<ul>
+    <li> Create support for CLI</li>
+    <li> Make the pipeline adaptive to dynamic data inputs</li>
+</ul>
