@@ -37,7 +37,7 @@ class Processor:
 
         return " ".join([word for word in str(text).split() if word not in self.STOPWORDS])
 
-    def cleaning_repeating_char(text):
+    def cleaning_repeating_char(self, text):
         #remove the repitative characters from the text
 
         return re.sub(r'(.)1+', r'1', text)
