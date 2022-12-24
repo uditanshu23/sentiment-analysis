@@ -131,3 +131,5 @@ dmypy.json
 
 # Ignore the folders
 data/
+models/
+results/
