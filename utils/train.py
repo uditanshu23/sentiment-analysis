@@ -25,7 +25,7 @@ from tensorflow.keras.layers import Embedding
 
 class Train:
     
-        def __init__(self, checkpoint_path="models/cp-{epoch:04d}.ckpt", batch_size=32, epochs=1):
+        def __init__(self, checkpoint_path="models/cp-{epoch:04d}.ckpt", batch_size=32, epochs=5):
             self.checkpoint_path = checkpoint_path
             self.batch_size = batch_size
             self.epochs = epochs
@@ -66,6 +66,7 @@ class Train:
 
             plt.plot(prediction.history['accuracy'], label='accuracy')
             plt.plot(prediction.history['val_accuracy'], label='val_accuracy')
+            os.makedirs("./results", exist_ok=True)
             plt.savefig('./results/accuracy plot.jpg')
             return prediction
 
